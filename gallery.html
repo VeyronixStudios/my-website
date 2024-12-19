@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Галерея</h2>
+    <p>Ознайомтеся з нашими концепт-артами, трейлерами та скріншотами ігор:</p>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images/artifact1.jpg') }}" alt="Artifact Concept Art">
+        <img src="{{ url_for('static', filename='images/artifact2.jpg') }}" alt="Artifact Screenshot">
+        <img src="{{ url_for('static', filename='images/life1.jpg') }}" alt="Life Simulator Art">
+        <img src="{{ url_for('static', filename='images/life2.jpg') }}" alt="Life Simulator Screenshot">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Наші проекти{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Наші проекти</h2>
+    <p>Ознайомтеся з нашими головними проектами:</p>
+    <div class="projects-gallery">
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/artifact.jpg') }}" alt="Artifact">
+            <h3>Artifact</h3>
+            <p>Фентезі з елементами кіберпанку.</p>
+            <a href="#" class="button">Детальніше</a>
+        </div>
+        <div class="project">
+            <img src="{{ url_for('static', filename='images/life_simulator.jpg') }}" alt="Life Simulator">
+            <h3>Life Simulator</h3>
+            <p>Реалістичний симулятор життя.</p>
+            <a href="#" class="button">Детальніше</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

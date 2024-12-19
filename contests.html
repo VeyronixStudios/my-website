@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Конкурси{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Конкурси</h2>
+    <p>Долучайтеся до наших конкурсів, демонструйте свої навички та вигравайте призи:</p>
+    <div class="contest">
+        <h3>Конкурс концепт-артів</h3>
+        <p>Створіть концепт-арт для нашого нового проекту та отримайте шанс виграти спеціальні призи!</p>
+        <form action="#" method="POST" class="contest-form">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="file">Завантажити файл:</label>
+            <input type="file" id="file" name="file" required>
+
+            <button type="submit" class="button">Подати заявку</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+''

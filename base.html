@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Veyronix Studios{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Veyronix Studios</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Головна</a></li>
+                <li><a href="/about">Про нас</a></li>
+                <li><a href="/projects">Проекти</a></li>
+                <li><a href="/blog">Блог</a></li>
+                <li><a href="/gallery">Галерея</a></li>
+                <li><a href="/profile">Особистий кабінет</a></li>
+                <li><a href="/contact">Контакти</a></li>
+                <li><a href="/contests">Конкурси</a></li>
+            </ul>
+        </nav>
+        <!-- Кнопка для перемикання тем -->
+        <button id="theme-toggle">Змінити тему</button>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>© 2024 Veyronix Studios. Усі права захищені.</p>
+    </footer>
+</body>
+</html>
